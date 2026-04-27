@@ -408,6 +408,22 @@ img {
   font-weight: 600;
 }
 
+.credential-badge {
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(63, 111, 93, 0.14);
+  border-radius: calc(var(--radius-lg) - 6px);
+}
+
+.credential-badge__image {
+  width: min(100%, 180px);
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
 .note {
   background: var(--color-white);
   border-radius: var(--radius-sm);
