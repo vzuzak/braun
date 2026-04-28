@@ -344,6 +344,12 @@ img {
   gap: var(--space-3);
 }
 
+.split__content--about > .credential-badge,
+.split__content--about > .split__title,
+.split__content--about > .note {
+  margin-top: var(--space-4);
+}
+
 .split__title {
   font-family: "Cormorant Garamond", serif;
   font-size: 24px;
