@@ -1,0 +1,16 @@
+{
+  "name": "Terapie Brejcha",
+  "short_name": "Terapie Brejcha",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f1ea",
+  "theme_color": "#3f6f5d",
+  "lang": "cs-CZ",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

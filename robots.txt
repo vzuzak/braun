@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://terapiebrejcha.cz/sitemap.xml
