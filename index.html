@@ -203,7 +203,7 @@
               "name": "Jak zrušit nebo přesunout termín?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Domluvený termín je potřeba zrušit nebo přesunout alespoň 24 hodin předem."
+                "text": "Dohodnutý termín konzultace je závazný. Pokud klient stornuje objednaný termín méně než 48 hodin před sjednanou konzultací nebo se v objednanou dobu nedostaví, hradí sezení v plné výši."
               }
             }
           ]
@@ -259,18 +259,43 @@
             <span class="badge">Online konzultace</span>
           </div>
         </div>
-        <div class="hero__card">
-          <div class="hero__card-content">
-            <h2 class="hero__card-title">„Pokud změníte způsob, jakým se díváte na věci, věci, na které se díváte, se
-              změní.“ Wayne Dyer</h2>
-            <ul class="hero__list">
-              <li>Partnerský terapeutický vztah</li>
-              <li>Respekt k vašemu tempu, hranicím i hodnotám</li>
-              <li>Diskrétnost, mlčenlivost a důvěra</li>
-            </ul>
-          </div>
-          <div class="hero__accent"></div>
-        </div>
+        <figure class="hero__photo-card">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                assets/images/generated/brejcha2-640.webp 640w,
+                assets/images/generated/brejcha2-960.webp 960w,
+                assets/images/generated/brejcha2-1400.webp 1400w
+              "
+              sizes="(max-width: 980px) calc(100vw - 2rem), 520px"
+            />
+            <source
+              type="image/jpeg"
+              srcset="
+                assets/images/generated/brejcha2-640.jpg 640w,
+                assets/images/generated/brejcha2-960.jpg 960w,
+                assets/images/generated/brejcha2-1400.jpg 1400w
+              "
+              sizes="(max-width: 980px) calc(100vw - 2rem), 520px"
+            />
+            <img
+              class="hero__photo"
+              src="assets/images/generated/brejcha2-960.jpg"
+              width="960"
+              height="639"
+              alt="Tomáš Brejcha v krajině"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </picture>
+          <figcaption class="hero__photo-caption">
+            <span class="hero__quote">
+              „Pokud změníte způsob, jakým se díváte na věci, věci, na které se díváte, se změní.“
+            </span>
+            <cite>Wayne Dyer</cite>
+          </figcaption>
+        </figure>
       </div>
     </section>
 
@@ -434,8 +459,7 @@
         </div>
         <div class="note note--wide">
           <p class="note__text">
-            Již domluvený termín je nutné zrušit nebo přesunout alespoň 24 hodin předem. Stejné
-            podmínky platí samozřejmě pro obě strany.
+            Dohodnutý termín konzultace je závazný. Pokud klient stornuje objednaný termín méně než 48 hodin před sjednanou konzultací nebo se v objednanou dobu nedostaví, hradí sezení v plné výši.
           </p>
         </div>
       </div>
@@ -483,7 +507,7 @@
           <details class="faq__item">
             <summary class="faq__question">Jak zrušit nebo přesunout termín?</summary>
             <p class="faq__answer">
-              Již domluvený termín je potřeba zrušit nebo přesunout alespoň 24 hodin předem.
+              Dohodnutý termín konzultace je závazný. Pokud klient stornuje objednaný termín méně než 48 hodin před sjednanou konzultací nebo se v objednanou dobu nedostaví, hradí sezení v plné výši.
             </p>
           </details>
         </div>
@@ -516,6 +540,35 @@
           </div>
         </div>
         <div class="contact__card">
+          <picture class="contact__photo">
+            <source
+              type="image/webp"
+              srcset="
+                assets/images/generated/brejcha-interier-420.webp 420w,
+                assets/images/generated/brejcha-interier-640.webp 640w,
+                assets/images/generated/brejcha-interier-900.webp 900w
+              "
+              sizes="(max-width: 980px) calc(100vw - 2rem), 440px"
+            />
+            <source
+              type="image/jpeg"
+              srcset="
+                assets/images/generated/brejcha-interier-420.jpg 420w,
+                assets/images/generated/brejcha-interier-640.jpg 640w,
+                assets/images/generated/brejcha-interier-900.jpg 900w
+              "
+              sizes="(max-width: 980px) calc(100vw - 2rem), 440px"
+            />
+            <img
+              class="contact__photo-image"
+              src="assets/images/generated/brejcha-interier-640.jpg"
+              width="640"
+              height="1138"
+              alt="Interiér ordinace v Českých Budějovicích"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
           <h3 class="contact__title">Objednání</h3>
           <div class="contact__hours">
             <div class="hours__row">

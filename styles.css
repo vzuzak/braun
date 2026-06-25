@@ -235,48 +235,59 @@ img {
   font-size: 13px;
 }
 
-.hero__card {
+.hero__photo-card {
   position: relative;
-  background: var(--color-white);
+  min-height: 480px;
+  aspect-ratio: 4 / 3;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-soft);
   overflow: hidden;
+  background: #d9d1c3;
 }
 
-.hero__card-content {
-  padding: var(--space-5);
-}
-
-.hero__card-title {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 26px;
-  margin-bottom: var(--space-2);
-}
-
-.hero__card-text {
-  color: var(--color-muted);
-  margin-bottom: var(--space-3);
-}
-
-.hero__list {
-  list-style: none;
-  display: grid;
-  gap: var(--space-2);
-  color: var(--color-ink);
-}
-
-.hero__list li::before {
-  content: "•";
-  color: var(--color-accent);
-  margin-right: 8px;
-}
-
-.hero__accent {
+.hero__photo-card::after {
+  content: "";
   position: absolute;
-  inset: auto -30% -40% auto;
-  width: 260px;
-  height: 260px;
-  background: radial-gradient(circle, rgba(63, 111, 93, 0.25) 0%, rgba(63, 111, 93, 0) 70%);
+  inset: 0;
+  background: linear-gradient(180deg, rgba(30, 43, 39, 0.02) 25%, rgba(30, 43, 39, 0.76) 100%);
+  pointer-events: none;
+}
+
+.hero__photo-card picture,
+.hero__photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero__photo {
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero__photo-caption {
+  position: absolute;
+  left: var(--space-4);
+  right: var(--space-4);
+  bottom: var(--space-4);
+  z-index: 1;
+  color: var(--color-white);
+  text-shadow: 0 2px 16px rgba(30, 43, 39, 0.42);
+}
+
+.hero__quote {
+  display: block;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.65rem, 2.2vw, 2.25rem);
+  line-height: 1.18;
+  margin-bottom: 10px;
+}
+
+.hero__photo-caption cite {
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .section {
@@ -519,6 +530,21 @@ img {
   box-shadow: var(--shadow-soft);
   display: grid;
   gap: var(--space-3);
+}
+
+.contact__photo {
+  display: block;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: calc(var(--radius-lg) - 8px);
+  background: #e7dccf;
+}
+
+.contact__photo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 44%;
 }
 
 .contact__title {
@@ -797,7 +823,17 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .hero__card-content,
+  .hero__photo-card {
+    min-height: 0;
+    aspect-ratio: 3 / 2;
+  }
+
+  .hero__photo-caption {
+    left: var(--space-3);
+    right: var(--space-3);
+    bottom: var(--space-3);
+  }
+
   .split__panel,
   .contact__card,
   .email-dialog__panel {
